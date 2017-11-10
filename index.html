@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- my css -->
+<link rel="stylesheet" href="style/style.css">
+  <!-- font awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- google fonts -->
+<link href='https://fonts.googleapis.com/css?family=Orbitron:900' rel='stylesheet' type='text/css'>
+  <!-- lib for chart -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+  <!-- my script -->
+<script src="js/mychart.js"></script>
+</head>
+<body>
+<div class="header"><h>GRAPH BUILDER&nbsp<i class="fa fa-bar-chart" aria-hidden="true"></h></i></div>
+<div class="vertical"></div> <!-- for layout -->
+<div id="main"> <!-- container for all divs -->
+  <div id="showform"></div> <!-- form of data for graphs -->
+<div id="initial"> <!-- first layout where choices among graphs will be shown -->
+  <img src="images/Line.JPG" id="line" alt= "Line Graph"/>&nbsp &nbsp
+  <img src="images/pie.jpg" id="pie" alt= "Pie Chart"/>&nbsp &nbsp
+  <img src="images/bar.jpg" id="bar" alt= "Bar Graph"/>
+</div>
+<div id="linegraphc"> <!-- input data for line graph -->
+  <h1>Enter Number Of Values For Line Graph:</h1><br>
+  <input type="number" id="value" /><br><br>
+  <input type="button" id="btn" value="Input Data" />
+  <input type="button" id="btndraw" value="Draw Line Graph" /></div>
+<div id="piechartc"> <!-- input data for pie chart -->
+  <h1>Enter Number Of Values For Pie Chart:</h1><br>
+  <input type="number" id="valuep" /><br><br>
+  <input type="button" id="btnp" value="Input Data" />
+  <input type="button" id="btnpdraw" value="Draw Pie Chart" /></div>
+<div id="bargraphc"> <!-- input data for bar graph -->
+  <h1>Enter Number Of Values For Bar Graph:</h1><br>
+  <input type="number" id="valueb" /><br><br>
+  <input type="button" id="btnb" value="Input Data" />
+  <input type="button" id="btnbdraw" value="Draw Bar Graph" /></div>
+<div id="container"> <!-- where graph is shown -->
+  <canvas id="myCharty"></canvas>
+</div>
+</div>
+</body>
+</html>
